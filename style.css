@@ -652,9 +652,9 @@ header .navbar {
     }
 
     .hero-section {
-        width: 100%;
+        min-height: 100vh;  /* mantiene la altura completa */
+        background-position: top center;
     }
-        
 
     body.show-mobile-menu .navbar .nav-menu {
         left: 0;
@@ -724,8 +724,9 @@ header .navbar {
         top: 1px;
     }
 
-    .hero-section {
+    .hero-section {    
         width: 100%;
+        background: url("img/imgbg2.jpg") no-repeat center center;
     }
     
     .services-section .services-list{
