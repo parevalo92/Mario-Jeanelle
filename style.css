@@ -94,6 +94,23 @@ img {
     background: var(--secondary-color);
 }
 
+.bg-audio {
+    display: none;
+}
+
+#btnMusica {
+    color: #988269;
+    margin-left: 15px; /* separa un poco del menú */
+    justify-content: center;
+    font-size: var(--font-size-m);
+}
+
+.btn-title-music {
+    color: #988269;
+    font-size: var(--font-size-m);
+}
+
+
 /* navbar style */
 
 .logo-text {
@@ -109,6 +126,7 @@ header {
 }
 
 header .navbar {
+    
     display: flex;
     padding: 8px;
     align-items: center;
@@ -130,7 +148,10 @@ header .navbar {
     color: #988269;
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
+    
 }
+
+
 
 .navbar .nav-menu .nav-link:hover {
     color: var(--white-color);
@@ -294,8 +315,8 @@ header .navbar {
 }
 
 .about-section .about-image-wrapper .about-image {
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
     object-fit: cover;
     border-radius: var(--border-radius-circle);
 }
@@ -674,7 +695,7 @@ header .navbar {
     .about-section .about-image-wrapper .about-image {
         width: 100%;
         height: 100%;
-        max-width: 250px;
+        max-width: 400px;
         aspect-ratio: 1;
     }
 
@@ -748,5 +769,9 @@ header .navbar {
     .footer-section .section-content {
         flex-direction: column;
         gap: 20px;
+    }
+
+    #btnMusica {
+        font-size: var(--font-size-xxl);
     }
 }

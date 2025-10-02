@@ -46,6 +46,12 @@
                 <li class="nav-item">
                     <a href="#contactus" class="nav-link"
                     data-section="header" data-value="contact-menu">Camparte con nosotros</a>
+                    
+                </li>
+                <li class="nav-item" >
+                    <a class="btn-title-music">Play our song
+                    <button id="btnMusica">▶</button>
+                    </a>
                 </li>
                 <div class="langbuttons">
                     <button class="eslogo" data-language="es">
@@ -152,5 +158,16 @@
 
     <!-- My custom script -->
     <script src="script.js"></script>
+
+    <!-- Autoloop audio-->
+     <div>
+        <audio id="miCancion" class="bg-audio" autoplay loop >
+            <source src="media/bg-sound.mp3" type="audio/mpeg">
+        </audio>
+        
+    </div>
 </body>
+
+
+
 </html>
