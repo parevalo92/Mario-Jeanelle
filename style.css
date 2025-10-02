@@ -80,7 +80,7 @@ img {
 .section-title {
     text-align: center;
     padding: 60px 0 100px;
-    text-transform: uppercase;
+    font-family: "Gabriela", serif;
     font-size: var(--font-size-xl);
 }
 
@@ -253,24 +253,21 @@ header .navbar {
 .wedding-date {
     height: 40vh;
     color: #988269;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .date-title {
-    justify-content: center;
     font-size: 3.5rem;
-    text-align: center;
-    margin-top: 15rem;
     font-family: "Gabriela", serif;
 }
 
 .date-text {
-    justify-content: center;
     font-size: 2rem;
-    text-align: center;
-    margin-top: 1.5rem;
-    font-family: "Parisienne", cursive;
-
-    
+    font-family: "Parisienne", cursive;   
 }
 
 /* Section 2 content */
@@ -651,10 +648,7 @@ header .navbar {
        transition: left 0.2s ease;
     }
 
-    .hero-section {
-        min-height: 100vh;  /* mantiene la altura completa */
-        background-position: top center;
-    }
+    
 
     body.show-mobile-menu .navbar .nav-menu {
         left: 0;
@@ -667,9 +661,9 @@ header .navbar {
         font-size: var(--font-size-l);
     }
     
-    .hero-section {
-        height: 80vh;
-        background-position: top center; /* cambia el foco */
+    .hero-section {    
+        width: 100%;
+        background: url("img/imgbg3.jpg") no-repeat center center;
     }
 
     .about-section .section-content {
@@ -726,7 +720,12 @@ header .navbar {
 
     .hero-section {    
         width: 100%;
-        background: url("img/imgbg2.jpg") no-repeat center center;
+        background: url("img/imgbg3.jpg") no-repeat center center;
+    }
+
+    .section2 {
+        width: 100%;
+        background: url("img/section2-640.jpg") no-repeat center center;
     }
     
     .services-section .services-list{
