@@ -668,36 +668,37 @@ header .navbar {
     #btnMusica {
         font-size: var(--font-size-xxl);
     }
-}
 
-.cd-section{
+    .cd-section{
     min-width: 30vh;
-}
+    }
 
-.cd-title {
+    .cd-title {
     font-size: 3rem;
-}
+    }
 
-.cd-li {
+    .cd-li {
     font-size: var(--font-size-m);
-}
+    }   
 
-.cd-li .cd-span {
+    .cd-li .cd-span {
     font-size: 3rem;
-}
+    }
 
-.schedule-title {
+    .schedule-title {
     font-size: 5rem;
-}
+    }
 
-.travels-title {
+    .travels-title {
     font-size: 4.5rem;
-}
+    }
 
-.dress-title {
+    .dress-title {
     font-size: 5.5rem;
+    }
+
+    .proposal-title {
+    font-size: 5rem;
+    }
 }
 
-.proposal-title {
-    font-size: 5rem;
-}
