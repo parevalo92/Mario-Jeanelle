@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Mario y Jeanelle</title>
+    <title>MiChofer</title>
     <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
@@ -17,10 +17,10 @@
         <nav class="navbar section-content">
             <a href="#" class="nav-logo">
                 <h2 class="logo-text">
-                    Mario & Janelle
+                    <img class="logoimg" src="img/logomf1.png" alt="">
                 </h2>
             </a>        
-                <!-- Header / Nav -->
+                
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
@@ -29,11 +29,15 @@
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link"
-                    data-section="header" data-value="about-menu">Nuestra historia</a>
+                    data-section="header" data-value="about-menu">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link"
+                    data-section="header" data-value="services-menu">Servicios</a>
                 </li>
                 <li class="nav-item">
                     <a href="#testimonials" class="nav-link"
-                    data-section="header" data-value="testimonials-menu">Testigos</a>
+                    data-section="header" data-value="testimonials-menu">Tertimonio</a>
                 </li>
                 <li class="nav-item">
                     <a href="#gallery" class="nav-link"
@@ -41,13 +45,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#contactus" class="nav-link"
-                    data-section="header" data-value="contact-menu">Camparte con nosotros</a>
-                    
-                </li>
-                <li class="nav-item" >
-                    <a class="btn-title-music">Play our song
-                    <button id="btnMusica">▶</button>
-                    </a>
+                    data-section="header" data-value="contact-menu">Contactanos</a>
                 </li>
                 <div class="langbuttons">
                     <button class="eslogo" data-language="es">
@@ -64,119 +62,206 @@
     <!-- Hero Section 1 -->
     <main>
        <section class="hero-section">
-        <div class="section-content">                      
-            
+        <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title"
+                data-section="hero" data-value="hero-title">Destino y Conexión</h2>
+                <h3 class="subtitle"
+                data-section="hero" data-value="hero-subtitle">Llevándote a donde importa, sin preocupaciones.</h3>  
+                    <p class="description"
+                    data-section="hero" data-value="hero-description">Disfruta del lujo, la comodidad y la seguridad en cada traslado. 
+                        Con nuestra plataforma, alquilas vehículos exclusivos o pagas por minutos de 
+                        viaje en autos de primera clase.</p>
+                
+                    <div class="buttons" >
+                        <a href="#" class="button-order-now"
+                        data-section="hero-botton" data-value="order-now">Order Now</a>
+                        <a href="#" class="button-contact-us"
+                         data-section="hero-botton" data-value="contact-us">Contact Us</a>
+                    </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="img/heroimg2.png" alt="Hero" class="hero-image">
+            </div>    
+
         </div>
        </section> 
-
-    
-
-    <!-- Wedding date section -->
-
-    <section class="wedding-date">
-        <div>
-            <h2 class="date-title">July 11 2026</h2>
-            <p class="date-text">El Salvador, Cardedeu</p>
-        </div>         
-    </section>
-
-    <!-- Section 2 -->   
-      <section class="section2">
-        <div class="section2-content">
-
-        </div>
-      </section>
-
-    <!--Our Story Section-->
+    <!-- About us section-->
     <section class="about-section" id="about">
         <div class="section-content">
            <div class="about-image-wrapper">
-            <img src="img/os1.jpg" alt="About" class="about-image">
+            <img src="img/heroimg1.png" alt="About" class="about-image">
            </div> 
            <div class="about-details">
             <h2 class="section-title"
-            data-section="about-section" data-value="ab-title">Our Story</h2>
+            data-section="about-section" data-value="ab-title">Sobre nosotros</h2>
             <p class="text"
-            data-section="about-section" data-value="ab-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sequi quas saepe doloribus, numquam suscipit, 
-            soluta et, mollitia adipisci sit repudiandae iste dolorum minus consequuntur ab dolor veniam. Ad, ex?
-            <br>
+            data-section="about-section" data-value="ab-description">“Una nueva forma de moverte”
+            Somos una empresa de movilidad premium diseñada para quienes buscan más 
+            que solo transporte. Nuestro servicio combina puntualidad, elegancia y 
+            tecnología para ofrecerte traslados únicos, con vehículos de alto nivel 
+            y conductores altamente capacitados.
             </p>
-            
+            <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+            </div>
            
             
            </div>
         </div>
     </section>
 
-    <!--Countdown Sectiom-->
-    <div class="cd-section">
-        <h1 id="headline" class="cd-title">Wedding Date Countdown</h1>
-        <div id="countdown" class="cd-list">
-            <ul>
-                <li class="cd-li"><span id="days" class="cd-span"></span>days</li>
-                <li class="cd-li"><span id="hours" class="cd-span"></span>Hours</li>
-                <li class="cd-li"><span id="minutes" class="cd-span"></span>Minutes</li>
-                <li class="cd-li"><span id="seconds" class="cd-span"></span>Seconds</li>
+    <!-- Services section -->
+    <section class="services-section" id="services">
+        <h2 class="section-title"
+        data-section="our-services" data-value="os-title">Nuestros servicios</h2>
+        <div class="section-content">
+            <ul class="services-list">
+                <li class="services-item">
+                    <img src="img/service.png" alt="Relax Mom" class="services-image">
+                    <h3 class="name"
+                    data-section="our-services" data-value="os-title0">One way</h3>
+                    <p class="text"
+                    data-section="our-services" data-value="os-description0">🚘 Alquiler de vehículos premium: Elige entre nuestra flota de autos de lujo, SUV ejecutivas y sedanes exclusivos.
+                    </p>
+                </li>
+                <li class="services-item">
+                    <img src="img/service1.png" alt="Awful Mom" class="services-image">
+                    <h3 class="name"
+                    data-section="our-services" data-value="os-title1">Michofer</h3>
+                    <p class="text">⏱️ Pago por minutos de viaje: Traslados cortos o largos, pagas únicamente por el tiempo usado.
+                    </p>
+                </li>
+                <li class="services-item">
+                    <img src="img/service2.png" alt="Niggator Mom" class="services-image">
+                    <h3 class="name"
+                    data-section="our-services" data-value="os-title2">VIP</h3>
+                    <p class="text"
+                    data-section="our-services" data-value="os-description2">👨‍✈️ Conductores profesionales: Personal capacitado en atención VIP y seguridad.
+                    </p>
+                </li>
+                <li class="services-item">
+                    <img src="img/service3.png" alt="FitMom" class="services-image">
+                    <h3 class="name"
+                    data-section="our-services" data-value="os-title3">Renta de vehiculo</h3>
+                    <p class="text"
+                    data-section="our-services" data-value="os-description3">🌐 Reservas digitales: Todo desde la app, sin complicaciones.
+                    </p>
+                </li>
+                
             </ul>
         </div>
-        <div id="content" class="emoji">
-        <span>Let's get the party started</span>
+    </section>
+
+    <!-- Testimonial section -->
+    <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+            <div class="slider-container swiper">
+                <div class="slider-wrapper">
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonial swiper-slide">
+                            <img src="img/client1.png" alt="Client" class="user-image">
+                            <h3 class="name">Testimonio</h3>
+                            <i class="feedback">“No es solo transporte, es un viaje de primera clase. Desde que lo probé, no uso otra app.”
+                                – Andrea M.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="img/client2.png" alt="Client" class="user-image">
+                            <h3 class="name">Viniwonka 503</h3>
+                            <i class="feedback">“El servicio es impecable, perfecto para reuniones de negocios y eventos especiales.”
+                                – Carlos G.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="img/client1.png" alt="Client" class="user-image">
+                            <h3 class="name">Viniwonka 503</h3>
+                            <i class="feedback">“El servicio es impecable, perfecto para reuniones de negocios y eventos especiales.”</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="img/client2.png" alt="Client" class="user-image">
+                            <h3 class="name">Viniwonka 503</h3>
+                            <i class="feedback">“El servicio es impecable, perfecto para reuniones de negocios y eventos especiales.”</i>
+                        </li>
+                        
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Schedule -->
-     <div class="schedule-section">
-        <div class="schedule-content">
-            <h1 class="schedule-title">Schedule</h1>    
-        </div>        
-     </div>
+    <!-- Galery Section -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <video class="video1" controls src="video/video1.mp4"></video>
+                </li>
+                <li class="gallery-item">
+                    <video class="video1" controls src="video/video1.mp4"></video>
+                </li>
+                <li class="gallery-item">
+                    <img src="img/galery3.png" alt="Gallery" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/galery1.png" alt="Gallery" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/galery2.png" alt="Gallery" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/galery3.png" alt="Gallery" class="gallery-image">
+                </li>
+            </ul>
+        </div>
+    </section>
 
-    <!-- Travels & accommodations Section --> 
-    <div class="travels-section">
-        <div class="travels-content">
-            <h1 class="travels-title">Travels & accommodations</h1>    
-        </div>        
-     </div>
+    <!-- Contact us section -->
+    <section class="contact-section" id="contactus">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p>Direccion de michofer</p>
+                </li>
+                 <li class="contact-info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>info@michofer.com</p>
+                </li>
+                 <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Telefono</p>
+                </li>
+                 <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Lunes - Martes : 8:00 AM - 9:00 PM</p>
+                </li>
+                 <li class="contact-info">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>www.website.com</p>
+                </li>
+            </ul>
 
-    <!-- Dress code Section --> 
-    <div class="dress-section">
-        <div class="dress-content">
-            <h1 class="dress-title">Dress Code</h1>    
-        </div>        
-     </div>
-
-    <!-- Our proposal Section --> 
-    <div class="proposal-section">
-        <div class="proposal-content">
-            <h1 class="proposal-title">Our Proposal</h1>    
-        </div>        
-     </div>
+            <form action="" class="contact-form">
+                <input type="text" placeholder="Your name" class="form-input" required>
+                <input type="email" placeholder="Your email" class="form-input" required>
+                <textarea placeholder="Your message" class="form-input" required></textarea>
+                <button class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer section -->
      <footer class="footer-section">
         <div class="section-content">
-            <p class="copyright-text">Parevalo92 - 2025</p>
+            <p class="copyright-text">2025</p>
 
             <div class="social-link-list">
              
@@ -199,16 +284,5 @@
 
     <!-- My custom script -->
     <script src="script.js"></script>
-
-    <!-- Autoloop audio-->
-     <div>
-        <audio id="miCancion" class="bg-audio" autoplay loop >
-            <source src="media/bg-sound.mp3" type="audio/mpeg">
-        </audio>
-        
-    </div>
 </body>
-
-
-
 </html>
