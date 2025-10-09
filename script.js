@@ -106,3 +106,14 @@ function updateCountdown() {
 updateCountdown();
 // 2. Ejecutar la función cada 1000 milisegundos (1 segundo)
 const interval = setInterval(updateCountdown, 1000);
+
+/* Scroll Reveal */ 
+ScrollReveal().reveal('.hero-section, .wedding-date, .section2, .about-section, .cd-section, .schedule-section, .travels-section, .dress-section, .proposal-section', { 
+  duration: 1200,      // Duración de la animación en milisegundos (1200ms = 1.2s)
+  distance: '10px',    // Qué tanto se mueve el elemento (por ejemplo 50px desde abajo)
+  origin: 'bottom',    // Desde dónde aparece: 'top', 'bottom', 'left', 'right'
+  easing: 'ease-in-out', // Tipo de aceleración (puedes probar 'ease', 'linear', etc.)
+  delay: 200,          // Retraso antes de empezar la animación
+  interval: 200,       // Retraso entre cada elemento si hay varios iguales
+  reset: true,        // Si quieres que el efecto se repita al hacer scroll hacia arriba
+});
