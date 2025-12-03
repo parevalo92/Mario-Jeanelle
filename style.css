@@ -81,6 +81,7 @@ img {
     text-align: center;
     padding: 60px 0 100px;
     font-family: "Gabriela", serif;
+    color: #988269;
     font-size: var(--font-size-xl);
 }
 
@@ -91,7 +92,7 @@ img {
     display: block;
     margin: 10px auto 0;
     border-radius: var(--border-radius-s);
-    background: var(--secondary-color);
+    background: var(--dark-color);
 }
 
 .bg-audio {
@@ -428,17 +429,158 @@ header .navbar {
     font-size: 4.5rem;
 }
 
+
+:root {
+    --gold: #c8a159;       /* dorado elegante */
+    --soft-gold: #e8d6b0;  /* dorado suave */
+}
+
+.travel-slider {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 2px solid var(--gold);
+}
+
+.travel-slider .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.travel-slider .slide.active {
+    display: block;
+    animation: fade 0.8s ease-in-out;
+}
+
+.travel-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 50%;
+    color: white;
+    text-shadow: 0 5px 8px rgba(0,0,0,0.6);
+}
+
+.slide-text h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: var(--gold);
+}
+
+.slide-text p {
+    font-size: 1.4rem;
+    margin-top: 8px;
+    text-align: center;
+    font-family: "Gabriela", serif;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls span {
+    font-size: 2.5rem;
+    color: var(--gold);
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.controls span:hover {
+    color: white;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
 /* Travel & accommodations Section */
 
 .travels-section {
-    min-height: 100vh;
-    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.travel-title {
+   margin: 0 auto;
     text-align: center;
     align-content: center;
-    background-color: #988269;
-    font-size: 4.5rem;
-    color: white;
+    color: #988269;
+    font-size: 4.5rem; 
 }
+
+.image-tna {
+    width: 50%;
+    display: flex;
+    justify-content: center;   /* Centra horizontal */
+    align-items: center;       /* Centra vertical */
+    margin-right: 0;           /* Quitamos el empuje hacia la derecha */
+}
+
+
+.img-tna {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.travels-content {
+    width: 60%;
+}
+
+.travel-text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+    color: #685948;
+    font-family: "Gabriela", serif;
+}
+
+h2 {
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+    color: #685948;
+    font-family: "Gabriela", serif;
+}
+
+/* Responsive: en móvil se acomoda vertical */
+@media (max-width: 900px) {
+    .hero-travels {
+        flex-direction: column;
+        text-align: left;
+        padding: 40px 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+
 
 /* Dress code Section */
 
@@ -503,6 +645,56 @@ header .navbar {
     margin: 0 5px;
     color: var(--white-color);
 }
+
+/* Donate section */
+.donate-section {
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #ffffff, #ece7e3);
+    display: flex;
+    justify-content: center;
+}
+
+.donate-section form {
+    background: white;
+    padding: 45px;
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.donate-section label {
+    font-size: 1.8rem;
+    color: #988269;
+    font-family: "Gabriela", serif;
+}
+
+.donate-section input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 20px;
+    border: 1px solid #c5b5a6;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "Gabriela", serif;
+}
+
+.donate-section input[type="submit"] {
+    background: #988269;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.donate-section input[type="submit"]:hover {
+    background: #7b6650;
+}
+
+
 
 /* Responsive media query code for max width 1024px */
 
@@ -637,8 +829,23 @@ header .navbar {
         align-items: center;
         flex-direction: column-reverse;
     }
+    .travels-section {
+        flex-direction: column-reverse;
+    }
+    .img-tna {
+        max-width: 300px;
+        max-height: 300px;
+    }
 
+    .slide-text h2 {
+        font-size: 1.9rem;
+    }
 
+    .slide-text p {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    }
+    
 }
 
 /* Responsive media query code for max width 640px */
@@ -719,6 +926,15 @@ header .navbar {
 
     .proposal-title {
     font-size: 5rem;
+    }
+
+    .slide-text p {
+    font-size: 0.6rem;
+    margin-top: 8px;
+    }
+
+    .logo-text {
+        margin-top: -2px;
     }
 }
 

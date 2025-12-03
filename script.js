@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 // 1. Define la fecha y hora de tu boda (¡ajusta esto!)
 // Formato: Año, Mes-1, Día, Hora, Minuto, Segundo
 // NOTA: El mes va de 0 (Enero) a 11 (Diciembre). Por ejemplo, Noviembre es 10.
-const weddingDate = new Date("January 2, 2026 18:00:00").getTime(); 
+const weddingDate = new Date("February 14, 2026 18:00:00").getTime(); 
 
 // Elementos HTML
 const daysEl = document.getElementById("days");
@@ -117,3 +117,6 @@ ScrollReveal().reveal('.hero-section, .wedding-date, .section2, .about-section, 
   interval: 200,       // Retraso entre cada elemento si hay varios iguales
   reset: true,        // Si quieres que el efecto se repita al hacer scroll hacia arriba
 });
+
+/* Travels and aco */
+
