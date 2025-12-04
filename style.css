@@ -522,13 +522,7 @@ header .navbar {
     margin: auto;
 }
 
-.travel-title {
-   margin: 0 auto;
-    text-align: center;
-    align-content: center;
-    color: #988269;
-    font-size: 4.5rem; 
-}
+
 
 .image-tna {
     width: 50%;
@@ -599,14 +593,107 @@ h2 {
 
 /* proposal-section */
 
-.proposal-section {
-    min-height: 100vh;
-    margin: 0 auto;
+
+.gallery-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.gallery-title {
     text-align: center;
-    align-content: center;
-    background-color: #988269;
-    font-size: 4.5rem;
-    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: #b89a62;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Ítem de la galería */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    aspect-ratio: 3 / 4;
+    min-height: 220px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.12);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Overlay dorado */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(184,154,98,0.6), rgba(0,0,0,0));
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal img {
+    max-width: 92%;
+    max-height: 86%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.close-btn {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /* faq section */
@@ -996,6 +1083,14 @@ transform: rotate(45deg);
 
     .logo-text {
         margin-top: -2px;
+    }
+
+    .gallery-title {
+        font-size: 2rem;
+    }
+    .gallery-item {
+        aspect-ratio: 4 / 3;
+        min-height: 160px;
     }
 }
 
