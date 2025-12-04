@@ -118,5 +118,14 @@ ScrollReveal().reveal('.hero-section, .wedding-date, .section2, .about-section, 
   reset: true,        // Si quieres que el efecto se repita al hacer scroll hacia arriba
 });
 
-/* Travels and aco */
+/* FAQ */
+
+const items = document.querySelectorAll('.faq-item');
+
+
+items.forEach(item => {
+item.addEventListener('click', () => {
+item.classList.toggle('active');
+});
+});
 
