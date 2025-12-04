@@ -131,7 +131,7 @@ img {
 
 .logo-text {
     color: #988269;
-    font-size: var(--font-size-xxl);
+    font-size: 1.5rem;
 }
 
 header {
@@ -889,7 +889,7 @@ transform: rotate(45deg);
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        font-size: var(--font-size-xl); /* opcional, lo haces más visible */
+        font-size: var(--font-size-m);
         top: 1px;
     }
 
