@@ -1077,7 +1077,12 @@ transform: rotate(45deg);
     }
 
     .slide-text p {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
+    margin-top: 8px;
+    }
+
+    .slide-text .where-to-stay-text {
+    font-size: 0.55rem;
     margin-top: 8px;
     }
 
