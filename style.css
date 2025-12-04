@@ -1,6 +1,6 @@
 /* Google Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Parisienne&display=swap');
 
 
@@ -44,7 +44,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Parisienne", cursive; 
+    font-family: "Gabriela", serif; 
 }
 
 html {
@@ -640,20 +640,23 @@ font-weight: bold;
 color: #6b573a;
 display: flex;
 justify-content: space-between;
+font-family: "Gabriela", serif;
 }
-
 
 .faq-answer {
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.4s ease;
 padding-top: 0;
+font-family: "Gabriela", serif;
+font-size: 1.2rem;
 }
 
 
 .faq-item.active .faq-answer {
 padding-top: 15px;
 max-height: 500px;
+font-family: "Gabriela", serif;
 }
 
 
