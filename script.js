@@ -149,3 +149,30 @@ closeBtn.addEventListener('click', () => {
 modal.addEventListener('click', (e) => {
     if (e.target === modal) modal.classList.remove('active');
 });
+
+
+// Coordenadas de ejemplo (San Salvador). Puedes cambiar la ciudad si quieres.
+const lat = 13.6929;
+const lon = -89.2182;
+
+async function getTemperature() {
+    try {
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        const temp = data.current_weather.temperature;
+
+        document.getElementById("temp-value").textContent = `${temp}°C`;
+        document.getElementById("temp-city").textContent = "San Salvador";
+    } catch (e) {
+        document.getElementById("temp-value").textContent = "N/A";
+        document.getElementById("temp-city").textContent = "Error";
+    }
+}
+
+// Ejecutar al cargar
+getTemperature();
+
+// Actualizar cada 15 minutos
+setInterval(getTemperature, 900000);

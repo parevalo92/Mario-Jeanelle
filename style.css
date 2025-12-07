@@ -108,7 +108,7 @@ img {
 
 .btn-title-music {
     color: white;
-    background-color: #988269;
+    background-color: #b89a62;
     position: fixed;
     bottom: 20px; /* distancia desde abajo */
     right: 20px;  /* distancia desde la derecha */
@@ -696,6 +696,58 @@ h2 {
     font-weight: bold;
 }
 
+/* RSVP FORM SECTION */
+.rsvp-section {
+    padding: 100px 20px;
+    background: #faf4f5;
+}
+
+.rsvp-form {
+    background: white;
+    padding: 50px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.rsvp-label {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #988269;
+    font-family: "Gabriela", serif;
+}
+
+.rsvp-input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid #c5b5a6;
+    font-size: 1.2rem;
+    font-family: "Gabriela", serif;
+}
+
+.rsvp-submit {
+    margin-top: 30px;
+    background: #988269;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Gabriela", serif;
+}
+
+.rsvp-submit:hover {
+    background: #7b6650;
+}
+
+
 /* faq section */
 
 .faq-container {
@@ -842,6 +894,66 @@ transform: rotate(45deg);
     background: #7b6650;
 }
 
+
+/* Widget flotante de temperatura */
+.temp-widget {
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    background: #b89a62; /* Dorado elegante */
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 9999;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.temp-widget:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+}
+
+.temp-icon {
+    font-size: 1.7rem;
+}
+
+.temp-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+#temp-value {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#temp-city {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* Mobile Ajuste */
+@media (max-width: 600px) {
+    .temp-widget {
+        bottom: 15px;
+        right: 10px;
+        padding: 12px 14px;
+        width: 140px;
+    }
+    #temp-value {
+        font-size: 1.1rem;
+    }
+    .temp-icon {
+        font-size: 1.5rem;
+    }
+}
 
 
 /* Responsive media query code for max width 1024px */
@@ -1096,6 +1208,25 @@ transform: rotate(45deg);
     .gallery-item {
         aspect-ratio: 4 / 3;
         min-height: 160px;
+    }
+
+    .btnMusica-text {
+        display: none;
+    }
+
+    .btn-title-music {
+    width: 80px;          /* tamaño del círculo */
+    height: 80px;
+    border-radius: 50%;   /* hace el círculo */
+    background: #c8a159;  /* tu color dorado */
+    display: flex;        /* CENTRADO PERFECTO */
+    justify-content: center;
+    align-items: center;
+    }
+
+    #btnMusica {
+        font-size: 35px;
+        margin-left: 0.7rem;
     }
 }
 

@@ -18,6 +18,17 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+
+    <!-- Temp Widget -->
+    <div id="temp-widget" class="temp-widget">
+    <div class="temp-icon">🌤️</div>
+    <div class="temp-info">
+        <span id="temp-value">--°C</span>
+        <small id="temp-city">Cargando...</small>
+      </div>
+        </div>
+
+    <!-- Btn Musica -->
     <div class="btn-title-music">
     <span class="btnMusica-text">Play our song</span>
     <button id="btnMusica">▶</button>
@@ -62,13 +73,14 @@
                     data-section="header" data-value="contact-menu">Our Proposal</a> 
                 </li>
                 <li class="nav-item">
+                    <a href="#donate-id" class="nav-link"
+                    data-section="header" data-value="contact-menu">Gift</a> 
+                </li>
+                <li class="nav-item">
                     <a href="#faq-id" class="nav-link"
                     data-section="header" data-value="contact-menu">FAQ</a> 
                 </li>
-                <li class="nav-item">
-                    <a href="#donate-id" class="nav-link"
-                    data-section="header" data-value="contact-menu">Donate</a> 
-                </li>
+                
                 <!-- Header / Nav 
                 <div class="langbuttons">
                     <button class="eslogo" data-language="es">
@@ -225,10 +237,7 @@
         <div class="slide-text">
             <h2>Things to Do in Lago Coatepeque</h2>
             <p>Boat rides around the crater lake
-        Swimming, kayaking, and paddle boarding
-        Santa Ana Volcano hike (incredible turquoise crater!)
-        Café Albania (zip-lines, giant swings, photo spots)
-        Ataco town on the Ruta de las Flores (murals, coffee shops, artisan markets)</p>
+        Swimming, kayaking, and paddle boarding</p>
         </div>
     </div>
 
@@ -422,6 +431,54 @@
         <span class="close-btn" id="closeBtn">×</span>
         <img id="modalImg" src="" alt="">
     </div>
+
+    <!--donate Section --> 
+
+    <section class="rsvp-section">
+    <div class="section-content">
+        <h2 class="section-title">RSVP Confirmation</h2>
+
+        <form class="rsvp-form" action="https://formbold.com/s/9EWwb" method="POST">
+            
+            <!-- Full Name -->
+            <label for="fullname" class="rsvp-label" name="full-name">Guests Name</label>
+            <input type="text" id="fullname" name="fullname" class="rsvp-input" 
+                   placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label for="email" class="rsvp-label" name="email">Email Address</label>
+            <input type="email" id="email" name="email" class="rsvp-input" 
+                   placeholder="Enter your email" required>
+
+            <!-- Guests Selection -->
+            <label for="guests" class="rsvp-label" name="number-og">Number of Guests</label>
+            <select id="guests" name="guests" class="rsvp-input" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Reservation for 1 person</option>
+                <option value="2">Reservation for 2 people</option>
+                <option value="3">Reservation for 3 people</option>
+                <option value="4">Reservation for 4 people</option>
+            </select>
+
+            <!-- Email -->
+            <label for="song" class="rsvp-label" name="song">What song will get you dancing?</label>
+            <input type="text" id="song" name="song" class="rsvp-input" 
+                   placeholder="Enter your favorite song" required>
+
+            <label for="shuttle-info" class="rsvp-label">
+            We are arranging shuttles based on high-demand schedules. 
+            Please provide the arrival and departure dates and times so we can accommodate your transportation.
+            </label>
+
+            <textarea id="shuttle-info" name="shuttle-info" class="rsvp-input" 
+            placeholder="Example: Arrival – May 24 at 3:00 PM / Departure – May 26 at 11:00 AM"
+            rows="4" required></textarea>       
+
+            <!-- Submit -->
+            <input type="submit" value="Confirm Attendance" class="rsvp-submit">
+        </form>
+    </div>
+</section>
 
     <!--donate Section --> 
     <div class="donate-section" id="donate-id">
